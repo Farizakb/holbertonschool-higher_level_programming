@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
         'D': 500,
         'M': 1000
     }
-    if number is None or not isinstance(roman_string, str):
+    if roman_string is None or not isinstance(roman_string, str):
         return 0
     total = 0
     prev_value = 0
