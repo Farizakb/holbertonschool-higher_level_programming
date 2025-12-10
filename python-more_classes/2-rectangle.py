@@ -54,14 +54,14 @@ class Rectangle:
 
     def area(self):
         """
-        Calculate and return the area of the rectangle.
+        Return the area of the rectangle.
         """
         return self.__width * self.__height
-    
+
     def perimeter(self):
         """
-        Calculate and return the perimeter of the rectangle.
-        If either width or height is 0, the perimeter is 0.
+        Return the perimeter of the rectangle.
+        If width or height is 0, the perimeter is 0.
         """
         if self.__width == 0 or self.__height == 0:
             return 0
