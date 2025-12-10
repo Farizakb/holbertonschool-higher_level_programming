@@ -66,12 +66,10 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
-    
+
     def __str__(self):
         """Return the rectangle using # characters"""
         if self.width == 0 or self.height == 0:
             return ""
         lines = ["#" * self.width for _ in range(self.height)]
         return "\n".join(lines)
-
-
