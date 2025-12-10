@@ -1,22 +1,16 @@
 #!/usr/bin/python3
 """10-square.py"""
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
+class Square(Rectangle):
+    """Square class that inherits from Rectangle"""
 
-class Rectangle(BaseGeometry):
-    """Rectangle class that inherits from BaseGeometry"""
-
-    def __init__(self, width, height):
-        """Initialize private width and height with validation"""
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
-        self.__width = width
-        self.__height = height
+    def __init__(self, size):
+        """Initialize the square with private size, validated"""
+        self.integer_validator("size", size)
+        self.__size = size
+        super().__init__(size, size)
 
     def area(self):
-        """Return the area of the rectangle"""
-        return self.__width * self.__height
-
-    def __str__(self):
-        """Return string representation: [Rectangle] <width>/<height>"""
-        return "[Rectangle] {}/{}".format(self.__width, self.__height)
+        """Return the area of the square"""
+        return self.__size * self.__size
