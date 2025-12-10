@@ -1,0 +1,1 @@
+This is the Python class inheritance tasks
