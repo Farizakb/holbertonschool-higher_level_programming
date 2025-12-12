@@ -4,7 +4,7 @@
 
 
 def pascal_triangle(n):
-    """Return a list of lists of integers representing Pascal's triangle of n rows.
+    """Return a list of lists of integers representing Pascal's tri
 
     Args:
         n (int): The number of rows of the triangle.
